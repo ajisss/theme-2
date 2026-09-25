@@ -1,0 +1,669 @@
+<html lang="id"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Java Egg Specialities — Mamayo Mayonnaise Paling Enak</title>
+<meta name="description" content="Mayonais Mamayo terbuat dari bahan berkualitas warnanya yang kekuningan berasal dari Telur segar yang melalui proses pasteurisasi. Mamayo Mayonnaise Paling Enak untuk risol mayo dan salad buah">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;display=swap"><style>.font-geist { font-family: 'Geist', sans-serif !important; }</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@300;400;500;600;700&amp;display=swap"><style>.font-bricolage { font-family: 'Bricolage Grotesque', sans-serif !important; }</style>
+</head>
+  <body class="min-h-screen antialiased text-white bg-[#0B0F12]" style="font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji';">
+    <header class="relative bg-white text-gray-900">
+      <nav class="relative z-10">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="flex h-16 items-center justify-between">
+            <!-- Brand -->
+            <a href="#" class="flex items-center gap-2">
+              <span class="inline-flex h-8 w-8 items-center justify-center rounded-md bg-black/5 ring-1 ring-black/10 overflow-hidden">
+                <img src="logo-javaegg.webp" alt="Java Egg Specialities" class="h-6 w-6 object-contain">
+              </span>
+              <span class="uppercase text-lg font-semibold tracking-tighter font-bricolage">Java Egg</span>
+            </a>
+
+            <!-- Desktop Nav -->
+            <div class="hidden md:flex items-center gap-2">
+              <a href="#" class="px-3 py-1.5 rounded-full bg-black/5 ring-1 ring-black/10 text-sm font-medium text-gray-900 hover:bg-black/10 transition font-geist">Home</a>
+              <a href="#produk" class="px-3 py-1.5 rounded-full bg-black/5 ring-1 ring-black/10 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-black/10 transition font-geist">Produk</a>
+              <a href="#produk" class="px-3 py-1.5 rounded-full bg-black/5 ring-1 ring-black/10 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-black/10 transition font-geist">Mayonais</a>
+              <a href="#produk" class="px-3 py-1.5 rounded-full bg-black/5 ring-1 ring-black/10 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-black/10 transition font-geist">Sambal</a>
+              <a href="#produk" class="px-3 py-1.5 rounded-full bg-black/5 ring-1 ring-black/10 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-black/10 transition font-geist">Special Sauce</a>
+              <a href="#tentang" class="px-3 py-1.5 rounded-full bg-black/5 ring-1 ring-black/10 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-black/10 transition font-geist">Perusahaan</a>
+            </div>
+
+            <!-- Actions -->
+            <div class="hidden md:flex items-center gap-3">
+              <a href="#kontak" class="text-sm font-medium text-gray-700 hover:text-gray-900 transition font-geist">Hubungi Kami</a>
+              <a href="#produk" class="inline-flex items-center gap-2 rounded-full bg-gray-900 text-white px-4 py-2 text-sm font-semibold hover:bg-gray-800 transition font-geist">
+                Lihat Produk
+              </a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <button id="menuBtn" class="md:hidden inline-flex h-9 w-9 items-center justify-center rounded-md bg-black/5 ring-1 ring-black/10 hover:bg-black/10 transition" aria-label="Open menu">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu h-5 w-5 text-gray-900"><path d="M4 12h16"></path><path d="M4 18h16"></path><path d="M4 6h16"></path></svg>
+            </button>
+          </div>
+
+          <!-- Mobile Nav Panel -->
+          <div id="mobileNav" class="md:hidden hidden border-t border-black/10 mt-2 pt-2 pb-3">
+            <div class="grid gap-2">
+              <a href="#" class="px-3 py-2 rounded-lg bg-black/5 ring-1 ring-black/10 text-sm font-medium text-gray-900 font-geist">Home</a>
+              <a href="#produk" class="px-3 py-2 rounded-lg bg-black/5 ring-1 ring-black/10 text-sm font-medium text-gray-700 font-geist">Produk</a>
+              <a href="#produk" class="px-3 py-2 rounded-lg bg-black/5 ring-1 ring-black/10 text-sm font-medium text-gray-700 font-geist">Mayonais</a>
+              <a href="#produk" class="px-3 py-2 rounded-lg bg-black/5 ring-1 ring-black/10 text-sm font-medium text-gray-700 font-geist">Sambal &amp; Special Sauce</a>
+              <a href="#tentang" class="px-3 py-2 rounded-lg bg-black/5 ring-1 ring-black/10 text-sm font-medium text-gray-700 font-geist">Perusahaan</a>
+              <div class="flex items-center justify-between gap-2 pt-2">
+                <a href="#kontak" class="text-sm font-medium text-gray-700 font-geist">Hubungi Kami</a>
+                <a href="#produk" class="inline-flex items-center gap-2 rounded-full bg-gray-900 text-white px-4 py-2 text-sm font-semibold hover:bg-gray-800 transition font-geist">
+                  Lihat Produk
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero -->
+      <section class="relative z-10">
+        <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 lg:pt-24 pb-6 text-center">
+          <h1 class="max-w-4xl mx-auto text-3xl sm:text-5xl lg:text-6xl text-gray-900 font-geist tracking-tighter">
+            Produsen Mayonnaise &amp; Saus Berkualitas untuk Dapur Anda.
+          </h1>
+          <p class="mx-auto mt-4 max-w-2xl text-base sm:text-lg text-gray-600 font-geist">
+            Produsen olahan telur, mayonnaise, dan saus di bawah brand Mamayo &amp; Euro Gourmet. Rasa lezat, harga bersahabat, dipercaya rumah tangga hingga bisnis kuliner.
+          </p>
+
+          <div class="mt-6 inline-flex items-center gap-2 rounded-full bg-black/5 px-3 py-1 ring-1 ring-black/10">
+            <span class="text-xs font-medium text-gray-600 font-geist">Spesialis Telur Segar Berkualitas sejak 2007</span>
+          </div>
+        </div>
+
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div id="heroSlider" class="relative rounded-3xl overflow-hidden ring-1 ring-black/10 bg-gray-50">
+            <div class="aspect-[1536/960] w-full relative">
+              <img src="assets/mamayo-banner-1536x960.webp" alt="Mamayo Mayonnaise banner" class="hero-slide absolute inset-0 w-full h-full object-contain transition-opacity duration-700 opacity-100">
+              <img src="assets/euro-gourmet-banner-1536x960.webp" alt="Euro Gourmet banner" class="hero-slide absolute inset-0 w-full h-full object-contain transition-opacity duration-700 opacity-0">
+            </div>
+            <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+              <button class="hero-dot w-2 h-2 rounded-full bg-gray-900/70 transition-colors" data-dot="0" aria-label="Slide 1"></button>
+              <button class="hero-dot w-2 h-2 rounded-full bg-gray-900/25 transition-colors" data-dot="1" aria-label="Slide 2"></button>
+            </div>
+          </div>
+        </div>
+        <script>
+          (function () {
+            var slides = document.querySelectorAll('#heroSlider .hero-slide');
+            var dots = document.querySelectorAll('#heroSlider .hero-dot');
+            var i = 0;
+            function show(idx) {
+              slides.forEach(function (s, n) { s.classList.toggle('opacity-100', n === idx); s.classList.toggle('opacity-0', n !== idx); });
+              dots.forEach(function (d, n) { d.classList.toggle('bg-gray-900/70', n === idx); d.classList.toggle('bg-gray-900/25', n !== idx); });
+              i = idx;
+            }
+            dots.forEach(function (d, n) { d.addEventListener('click', function () { show(n); }); });
+            setInterval(function () { show((i + 1) % slides.length); }, 4000);
+          })();
+        </script>
+
+        <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 pt-8 pb-24 lg:pb-40 text-center">
+          <div class="flex gap-3 items-center justify-center">
+            <a href="#produk" class="inline-flex items-center gap-2 rounded-full bg-gray-900 text-white px-5 py-3 text-sm sm:text-base font-semibold hover:bg-gray-800 transition font-geist">
+              Lihat Produk Kami
+            </a>
+            <a href="#tentang" class="inline-flex items-center gap-2 sm:text-base hover:bg-black/10 ring-1 ring-black/10 transition text-sm font-medium text-gray-900 font-geist bg-black/5 rounded-full pt-3 pr-5 pb-3 pl-5">
+              Kenali Java Egg
+            </a>
+          </div>
+
+          <div class="mt-8 flex items-center justify-center gap-2 text-xs text-gray-500">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide h-4 w-4" style="width: 12px; height: 12px;"><path d="m9 12 2 2 4-4"></path><circle cx="12" cy="12" r="10"></circle></svg>
+            <span class="uppercase tracking-wider font-geist">100% Bersertifikat Halal MUI</span>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- Small feature blips: Mengapa Memilih Kami -->
+    <section class="relative z-10 -mt-12 -top-20 pb-24">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+          <div class="rounded-2xl bg-white/5 ring-1 ring-white/10 p-4 backdrop-blur">
+            <div class="flex gap-3 items-start">
+              <span class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-white/10 ring-1 ring-white/15">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide h-4 w-4 text-white/90"><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M9 9h6v6H9z"></path></svg>
+              </span>
+              <div>
+                <p class="text-sm font-semibold tracking-tight font-geist">Pengolahan Terstandarisasi</p>
+                <p class="text-xs text-white/70 font-geist">Diolah secara terstandar dengan sistem keamanan pangan yang terjamin.</p>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-2xl bg-white/5 ring-1 ring-white/10 p-4 backdrop-blur">
+            <div class="flex gap-3 items-start">
+              <span class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-white/10 ring-1 ring-white/15">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide h-4 w-4 text-white/90"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg>
+              </span>
+              <div>
+                <p class="text-sm font-semibold tracking-tight font-geist">100% Halal</p>
+                <p class="text-xs text-white/70 font-geist">Seluruh produk sudah bersertifikat Halal MUI.</p>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-2xl bg-white/5 ring-1 ring-white/10 p-4 backdrop-blur">
+            <div class="flex gap-3 items-start">
+              <span class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-white/10 ring-1 ring-white/15">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide h-4 w-4 text-white/90"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"></path><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"></path></svg>
+              </span>
+              <div>
+                <p class="text-sm font-semibold tracking-tight font-geist">Harga Terjangkau</p>
+                <p class="text-xs text-white/70 font-geist">Cocok untuk usaha kuliner maupun konsumsi rumahan.</p>
+              </div>
+            </div>
+          </div>
+          <div class="ring-1 ring-white/10 bg-white/5 rounded-2xl pt-4 pr-4 pb-4 pl-4 backdrop-blur">
+            <div class="flex gap-3 items-start">
+              <span class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-white/10 ring-1 ring-white/15">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide h-4 w-4 text-white/90"><path d="M12 2 2 7l10 5 10-5-10-5Z"></path><path d="m2 17 10 5 10-5"></path><path d="m2 12 10 5 10-5"></path></svg>
+              </span>
+              <div>
+                <p class="text-sm font-semibold tracking-tight font-geist">Bahan Baku Pilihan</p>
+                <p class="text-xs text-white/70 font-geist">Diolah dengan bahan baku pilihan dan bermutu tinggi.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tentang Kami -->
+    <section id="tentang" class="sm:p-8 bg-white/5 ring-1 ring-white/10 backdrop-blur rounded-3xl mx-8 pt-6 pr-6 pb-6 pl-6">
+    <div class="flex items-center gap-2 text-sm text-white/70">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide h-4 w-4"><path d="M3 21h18"></path><path d="M5 21V7l8-4v18"></path><path d="M19 21V11l-6-4"></path></svg>
+        <span class="font-normal font-geist">Tentang Kami</span>
+    </div>
+    <div class="mt-2">
+        <h2 class="text-[36px] sm:text-5xl lg:text-6xl leading-[0.95] font-medium text-white tracking-tighter font-geist">PT Java Egg Specialities (JESS)</h2>
+        <p class="mt-3 max-w-3xl text-sm sm:text-base text-white/70 font-normal font-geist">Industri pengolahan telur cair pertama di Indonesia, berdiri sejak 2007 di bawah bendera bisnis Cimory Group yang terus berinovasi menghadirkan produk olahan telur berkualitas dengan produk jadi seperti Mayonais, Salad dressing, Saus merah, dan Saus specialities lainnya dengan brand Mamayo &amp; Euro Gourmet. Kepuasan konsumen adalah prioritas bisnis kami — setiap produk diproduksi secara terstandar dengan bahan berkualitas yang melewati proses pasteurisasi untuk memberikan sajian lezat, terbaik, dan bernutrisi.</p>
+    </div>
+
+    <!-- Kategori Produk -->
+    <div id="produk" class="mt-6 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
+        <article class="sm:p-6 flex flex-col min-h-[340px] bg-white/10 ring-1 ring-white/15 backdrop-blur rounded-2xl pt-5 pr-5 pb-5 pl-5 justify-between">
+            <div class="space-y-5">
+                <div class="flex items-center gap-3">
+                    <div class="h-12 w-12 rounded-full bg-white/20 ring-1 ring-white/25 flex items-center justify-center overflow-hidden">
+                        <img src="assets/mayonais-mamayo-enak-500g.webp" alt="Mayonais Mamayo" class="h-full w-full object-cover">
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-white font-geist tracking-tight">Mayonais</h3>
+                        <p class="text-xs text-white/60 font-geist uppercase tracking-wider">Brand Mamayo</p>
+                    </div>
+                </div>
+                <p class="text-sm text-white/80 font-geist">Mayonais Mamayo, mayonais paling lezat dari telur segar pilihan yang melalui proses pasteurisasi. "Rasa Lezat, Harga Bersahabat."</p>
+            </div>
+            <a href="#" class="mt-4 text-xs font-semibold text-white/80 hover:text-white font-geist">Selengkapnya →</a>
+        </article>
+
+        <article class="sm:p-6 flex flex-col min-h-[340px] bg-white/10 ring-1 ring-white/15 backdrop-blur rounded-2xl pt-5 pr-5 pb-5 pl-5 justify-between">
+            <div class="space-y-5">
+                <div class="flex items-center gap-3">
+                    <div class="h-12 w-12 rounded-full bg-white/20 ring-1 ring-white/25 flex items-center justify-center overflow-hidden">
+                        <img src="assets/Extra-Pedas-1000gr.webp" alt="Saus Sambal Extra Pedas" class="h-full w-full object-cover">
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-white font-geist tracking-tight">Sambal</h3>
+                        <p class="text-xs text-white/60 font-geist uppercase tracking-wider">Brand Euro Gourmet</p>
+                    </div>
+                </div>
+                <p class="text-sm text-white/80 font-geist">Saus Sambal Extra Pedas — pilihan saus dengan rasa paling pedas, diproses untuk menghasilkan kualitas terbaik.</p>
+            </div>
+            <a href="#" class="mt-4 text-xs font-semibold text-white/80 hover:text-white font-geist">Selengkapnya →</a>
+        </article>
+
+        <article class="sm:p-6 flex flex-col min-h-[340px] bg-white/10 ring-1 ring-white/15 backdrop-blur rounded-2xl pt-5 pr-5 pb-5 pl-5 justify-between">
+            <div class="space-y-5">
+                <div class="flex items-center gap-3">
+                    <div class="h-12 w-12 rounded-full bg-white/20 ring-1 ring-white/25 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide h-5 w-5 text-white/90"><path d="M3 11h18"></path><path d="M12 3v18"></path><circle cx="12" cy="12" r="9"></circle></svg>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-white font-geist tracking-tight">Special Sauce</h3>
+                        <p class="text-xs text-white/60 font-geist uppercase tracking-wider">Barbeque · Cheese · Tomat</p>
+                    </div>
+                </div>
+                <p class="text-sm text-white/80 font-geist">Memproduksi berbagai saus pilihan terbaik seperti Barbeque Sauce, Cheese Sauce, Saus Sambal, dan Saus Tomat.</p>
+            </div>
+            <a href="#" class="mt-4 text-xs font-semibold text-white/80 hover:text-white font-geist">Selengkapnya →</a>
+        </article>
+
+        <article class="sm:p-6 flex flex-col min-h-[340px] bg-white/10 ring-1 ring-white/15 backdrop-blur rounded-2xl pt-5 pr-5 pb-5 pl-5 justify-between">
+            <div class="space-y-5">
+                <div class="flex items-center gap-3">
+                    <div class="h-12 w-12 rounded-full bg-white/20 ring-1 ring-white/25 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide h-5 w-5 text-white/90"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5v14a9 3 0 0 0 18 0V5"></path></svg>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-white font-geist tracking-tight">Liquid Egg</h3>
+                        <p class="text-xs text-white/60 font-geist uppercase tracking-wider">Telur cair pertama di Indonesia</p>
+                    </div>
+                </div>
+                <p class="text-sm text-white/80 font-geist">Produk olahan telur cair berkualitas dari peternak lokal, bahan dasar setiap produk Java Egg Specialities.</p>
+            </div>
+            <a href="#" class="mt-4 text-xs font-semibold text-white/80 hover:text-white font-geist">Selengkapnya →</a>
+        </article>
+    </div>
+
+    <div class="mt-8 text-center">
+        <a href="#kontak" class="inline-flex items-center gap-2 rounded-full bg-white text-neutral-900 px-6 py-3 text-sm font-semibold hover:bg-white/90 transition font-geist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide h-4 w-4"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path></svg>
+            Pesan produk sekarang
+        </a>
+        <p class="mt-2 text-xs text-white/60 font-geist">Untuk kebutuhan usaha kuliner maupun rumahan</p>
+    </div>
+</section>
+
+<!-- Testimoni -->
+<section id="testimoni" class="max-w-7xl sm:px-6 sm:mt-20 mr-auto mb-24 ml-auto pr-4 pl-4">
+  <div class="relative overflow-hidden rounded-3xl ring-1 ring-white/10 bg-white/5 backdrop-blur">
+    <div class="relative sm:p-8 pt-6 pr-6 pb-6 pl-6">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+        <!-- Intro -->
+        <div class="md:col-span-5">
+          <h2 class="text-[48px] sm:text-[64px] leading-none font-semibold text-white tracking-tighter font-geist">
+            Apa kata mereka?</h2>
+          <p class="mt-3 text-sm sm:text-base text-white/80 font-geist">
+            Cerita nyata dari pelaku UMKM kuliner yang menggunakan Mamayo &amp; Euro Gourmet sebagai bahan andalan usaha mereka.
+          </p>
+          <a href="#kontak" class="mt-5 inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-sm font-medium tracking-tight text-white/90 bg-white/10 hover:bg-white/15 ring-1 ring-white/15 backdrop-blur">
+            <span class="font-geist">Gabung jadi mitra</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 stroke-1.5"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"></path></svg>
+          </a>
+        </div>
+
+        <!-- Accordion -->
+        <div class="md:col-span-7">
+          <div class="space-y-3">
+            <div class="rounded-2xl ring-1 ring-white/10 bg-white/5 backdrop-blur" data-accordion-item="" data-open="true">
+              <button type="button" class="w-full flex items-center justify-between gap-4 p-5 text-left" aria-expanded="true" data-accordion="testi">
+                <span class="flex items-center gap-3 text-left">
+                  <img src="assets/lia-60x60.png" alt="Lia" class="h-9 w-9 rounded-full object-cover ring-1 ring-white/20">
+                  <span>
+                    <span class="block text-base sm:text-lg font-semibold tracking-tight text-white font-geist">Lia</span>
+                    <span class="block text-xs text-white/50 font-geist">UMKM Dimsum</span>
+                  </span>
+                </span>
+                <span class="shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-icon="plus" class="w-5 h-5 stroke-1.5 text-white/70 hidden"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-icon="minus" class="w-5 h-5 stroke-1.5 text-white/70"><path d="M5 12h14"></path></svg>
+                </span>
+              </button>
+              <div class="px-5 pb-5 text-sm text-white/70 font-geist" data-qa="a">
+                "Sejak pakai Mamayo Alhamdulillah Dimsum Mamah Lia jadi lebih mantep lebih laris. Kata konsumen kami, rasa Mamayo pas banget dicampur saos sambal untuk cocolan Dimsum. Anak-anak juga suka sama rasa mayonya."
+              </div>
+            </div>
+
+            <div class="rounded-2xl ring-1 ring-white/10 bg-white/5 backdrop-blur" data-accordion-item="">
+              <button type="button" class="w-full flex items-center justify-between gap-4 p-5 text-left" aria-expanded="false" data-accordion="testi">
+                <span class="flex items-center gap-3 text-left">
+                  <img src="assets/lintang-tiwi-60x60.png" alt="Lintang Tiwi" class="h-9 w-9 rounded-full object-cover ring-1 ring-white/20">
+                  <span>
+                    <span class="block text-base sm:text-lg font-semibold tracking-tight text-white font-geist">Lintang Tiwi</span>
+                    <span class="block text-xs text-white/50 font-geist">UMKM Kebab</span>
+                  </span>
+                </span>
+                <span class="shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-icon="plus" class="w-5 h-5 stroke-1.5 text-white/70"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-icon="minus" class="w-5 h-5 stroke-1.5 text-white/70 hidden"><path d="M5 12h14"></path></svg>
+                </span>
+              </button>
+              <div class="px-5 pb-5 text-sm text-white/70 font-geist hidden" data-qa="a">
+                "Sejak setahun lalu, Euro Gourmet saus &amp; mayonaise selalu nemenin jualan kebabku. Konsumen suka banget, rasanya mantul bikin nagih."
+              </div>
+            </div>
+
+            <div class="rounded-2xl ring-1 ring-white/10 bg-white/5 backdrop-blur" data-accordion-item="">
+              <button type="button" class="w-full flex items-center justify-between gap-4 p-5 text-left" aria-expanded="false" data-accordion="testi">
+                <span class="flex items-center gap-3 text-left">
+                  <img src="assets/key-60x60.png" alt="Key" class="h-9 w-9 rounded-full object-cover ring-1 ring-white/20">
+                  <span>
+                    <span class="block text-base sm:text-lg font-semibold tracking-tight text-white font-geist">Key</span>
+                    <span class="block text-xs text-white/50 font-geist">Pecinta Keju</span>
+                  </span>
+                </span>
+                <span class="shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-icon="plus" class="w-5 h-5 stroke-1.5 text-white/70"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-icon="minus" class="w-5 h-5 stroke-1.5 text-white/70 hidden"><path d="M5 12h14"></path></svg>
+                </span>
+              </button>
+              <div class="px-5 pb-5 text-sm text-white/70 font-geist hidden" data-qa="a">
+                "Buat temen-temen pecinta keju, wajib banget nyobain Euro Gourmet Cheese Sauce dari Java Egg. Kejunya berasa dan enakkkk bangettt. Cocok banget untuk temen nyemil."
+              </div>
+            </div>
+
+            <div class="rounded-2xl ring-1 ring-white/10 bg-white/5 backdrop-blur" data-accordion-item="">
+              <button type="button" class="w-full flex items-center justify-between gap-4 p-5 text-left" aria-expanded="false" data-accordion="testi">
+                <span class="flex items-center gap-3 text-left">
+                  <img src="assets/yusro-60x60.png" alt="Akhyarun Yusro" class="h-9 w-9 rounded-full object-cover ring-1 ring-white/20">
+                  <span>
+                    <span class="block text-base sm:text-lg font-semibold tracking-tight text-white font-geist">Akhyarun Yusro</span>
+                    <span class="block text-xs text-white/50 font-geist">UMKM Frozen Food</span>
+                  </span>
+                </span>
+                <span class="shrink-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-icon="plus" class="w-5 h-5 stroke-1.5 text-white/70"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-icon="minus" class="w-5 h-5 stroke-1.5 text-white/70 hidden"><path d="M5 12h14"></path></svg>
+                </span>
+              </button>
+              <div class="px-5 pb-5 text-sm text-white/70 font-geist hidden" data-qa="a">
+                "Jualan frozen food tidak akan lengkap tanpa mayonais &amp; saus dari Mamayo &amp; Euro Gourmet. Produk ini sangat dibutuhkan sebagai pelengkap rasa untuk sosis &amp; makanan beku lainnya."
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('#testimoni [data-accordion-item]').forEach(item => {
+        const open = item.hasAttribute('data-open');
+        const btn = item.querySelector('[data-accordion="testi"]');
+        const a = item.querySelector('[data-qa="a"]');
+        const plus = item.querySelector('[data-icon="plus"]');
+        const minus = item.querySelector('[data-icon="minus"]');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        a.classList.toggle('hidden', !open);
+        plus.classList.toggle('hidden', open);
+        minus.classList.toggle('hidden', !open);
+      });
+
+      document.querySelectorAll('#testimoni [data-accordion="testi"]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const item = btn.closest('[data-accordion-item]');
+          const content = item.querySelector('[data-qa="a"]');
+          const plus = item.querySelector('[data-icon="plus"]');
+          const minus = item.querySelector('[data-icon="minus"]');
+          const expanded = btn.getAttribute('aria-expanded') === 'true';
+          btn.setAttribute('aria-expanded', String(!expanded));
+          content.classList.toggle('hidden');
+          plus.classList.toggle('hidden');
+          minus.classList.toggle('hidden');
+        });
+      });
+    });
+  </script>
+</section>
+
+<!-- Artikel -->
+<section id="artikel" class="max-w-7xl mr-auto ml-auto mb-24 px-4 sm:px-6 lg:px-8">
+  <div class="flex items-end justify-between gap-4 mb-6">
+    <div>
+      <div class="flex items-center gap-2 text-sm text-white/70">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide h-4 w-4"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+        <span class="font-normal font-geist">Artikel</span>
+      </div>
+      <h2 class="mt-2 text-4xl sm:text-5xl font-semibold text-white tracking-tighter font-geist">Resep &amp; Inspirasi</h2>
+    </div>
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    <a href="#" class="group rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur overflow-hidden hover:bg-white/10 transition">
+      <div class="aspect-[16/9] overflow-hidden">
+        <img src="assets/resep-jagung-bakar-mayo-300x118.jpg" alt="Resep Jagung Bakar Mayo" class="w-full h-full object-cover group-hover:scale-105 transition">
+      </div>
+      <div class="p-4">
+        <h3 class="text-sm font-semibold text-white font-geist tracking-tight">Resep Jagung Bakar Mayo: Gurih dan Creamy!</h3>
+      </div>
+    </a>
+    <a href="#" class="group rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur overflow-hidden hover:bg-white/10 transition">
+      <div class="aspect-[16/9] overflow-hidden">
+        <img src="assets/mamayo-salad-300x237.png" alt="Lychee Orange Salad" class="w-full h-full object-cover group-hover:scale-105 transition">
+      </div>
+      <div class="p-4">
+        <h3 class="text-sm font-semibold text-white font-geist tracking-tight">Resep Takjil Istimewa: Lychee Orange Salad</h3>
+      </div>
+    </a>
+    <a href="#" class="group rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur overflow-hidden hover:bg-white/10 transition">
+      <div class="aspect-[16/9] overflow-hidden">
+        <img src="assets/mamayo-produk-300x183.png" alt="Cheesy Sandwich Tuna" class="w-full h-full object-cover group-hover:scale-105 transition">
+      </div>
+      <div class="p-4">
+        <h3 class="text-sm font-semibold text-white font-geist tracking-tight">Cheesy Sandwich Tuna (Resep Euro Gourmet)</h3>
+      </div>
+    </a>
+    <a href="#" class="group rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur overflow-hidden hover:bg-white/10 transition">
+      <div class="aspect-[16/9] overflow-hidden">
+        <img src="assets/saus-mentai-mamayo-300x118.jpg" alt="Saus Mentai Mamayo" class="w-full h-full object-cover group-hover:scale-105 transition">
+      </div>
+      <div class="p-4">
+        <h3 class="text-sm font-semibold text-white font-geist tracking-tight">Mentai dan Saus Mentai: Kenalan sama yang Lagi Hits!</h3>
+      </div>
+    </a>
+    <a href="#" class="group rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur overflow-hidden hover:bg-white/10 transition">
+      <div class="aspect-[16/9] overflow-hidden">
+        <img src="assets/kuliner-nachos-ala-mamayo-300x118.jpg" alt="Nachos ala Mamayo" class="w-full h-full object-cover group-hover:scale-105 transition">
+      </div>
+      <div class="p-4">
+        <h3 class="text-sm font-semibold text-white font-geist tracking-tight">Nachos Ala Mamayo: Cemilan Viral yang Simpel dan Lezat!</h3>
+      </div>
+    </a>
+    <a href="#" class="group rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur overflow-hidden hover:bg-white/10 transition">
+      <div class="aspect-[16/9] overflow-hidden">
+        <img src="assets/mayonnaise-untuk-salad-buah-300x200.jpg" alt="Buah untuk mencegah dehidrasi" class="w-full h-full object-cover group-hover:scale-105 transition">
+      </div>
+      <div class="p-4">
+        <h3 class="text-sm font-semibold text-white font-geist tracking-tight">Apa Saja Jenis Buah yang Bagus untuk Mencegah Dehidrasi?</h3>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- Kontak -->
+<section id="kontak" class="w-full mr-auto mb-8 ml-auto">
+  <div class="max-w-7xl sm:px-6 lg:px-8 mr-auto ml-auto pr-4 pl-4">
+    <div class="relative overflow-hidden ring-1 ring-white/10 bg-white/5 rounded-3xl backdrop-blur">
+
+      <!-- Content -->
+      <div class="relative z-10 md:p-12 lg:p-16 pt-8 pr-8 pb-8 pl-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          <!-- Form card -->
+          <div class="lg:col-span-5">
+            <div class="rounded-2xl bg-white/95 backdrop-blur ring-1 ring-white/20 shadow-lg p-6">
+              <div class="flex items-center justify-between">
+                <div>
+                  <p class="text-[11px] text-neutral-500 font-geist uppercase tracking-wider">Java Egg Support</p>
+                  <h3 class="mt-1 text-2xl sm:text-3xl font-semibold tracking-tight text-neutral-900 font-geist">
+                    Ada pertanyaan?
+                  </h3>
+                </div>
+                <div class="h-9 w-9 rounded-lg bg-neutral-900 text-white flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide h-4 w-4"><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path></svg>
+                </div>
+              </div>
+
+              <form action="#" method="POST" class="mt-6 space-y-4">
+                <div>
+                  <label for="ct-name" class="block text-xs text-neutral-600 font-geist">Nama Anda<span class="text-neutral-400"> *</span></label>
+                  <input id="ct-name" name="name" type="text" required placeholder="Nama lengkap" class="mt-1 w-full pl-3 pr-3 py-2.5 text-sm rounded-xl ring-1 ring-black/10 focus:ring-2 focus:ring-neutral-900 outline-none bg-white placeholder:text-neutral-400 font-geist">
+                </div>
+                <div>
+                  <label for="ct-email" class="block text-xs text-neutral-600 font-geist">Email<span class="text-neutral-400"> *</span></label>
+                  <div class="relative mt-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide h-4 w-4 text-neutral-400 absolute left-3 top-1/2 -translate-y-1/2"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
+                    <input id="ct-email" name="email" type="email" required placeholder="you@example.com" class="w-full pl-9 pr-3 py-2.5 text-sm rounded-xl ring-1 ring-black/10 focus:ring-2 focus:ring-neutral-900 outline-none bg-white placeholder:text-neutral-400 font-geist">
+                  </div>
+                </div>
+                <div>
+                  <label for="ct-msg" class="block text-xs text-neutral-600 font-geist">Pesan</label>
+                  <textarea id="ct-msg" name="message" rows="4" placeholder="Ada yang bisa kami bantu?" class="mt-1 w-full resize-y pl-3 pr-3 py-2.5 text-sm rounded-xl ring-1 ring-black/10 focus:ring-2 focus:ring-neutral-900 outline-none bg-white placeholder:text-neutral-400 font-geist"></textarea>
+                </div>
+                <button type="submit" class="w-full inline-flex items-center justify-center rounded-xl bg-neutral-900 text-white px-4 py-3 text-sm font-semibold hover:bg-neutral-800 transition-colors font-geist">
+                  Kirim pesan
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide h-4 w-4 ml-2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                </button>
+                <p class="text-[11px] text-neutral-500 font-geist">Dengan mengirim form ini, Anda menyetujui Syarat &amp; Kebijakan Privasi kami.</p>
+              </form>
+            </div>
+          </div>
+
+          <!-- Copy + highlights -->
+          <div class="lg:col-span-7">
+            <h2 class="text-4xl sm:text-5xl lg:text-6xl leading-[1.05] font-semibold text-white tracking-tight font-geist">Mari bicara.</h2>
+            <p class="text-base sm:text-lg max-w-2xl text-white/80 mt-4 font-geist">
+              Ceritakan kebutuhan bisnis Anda — kerja sama distribusi, pemesanan partai besar, atau sekadar tanya produk. Kami balas dalam 1 hari kerja.
+            </p>
+
+            <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div class="flex items-start gap-3">
+                <div class="h-9 w-9 rounded-lg bg-white/15 ring-1 ring-white/20 flex items-center justify-center text-white/90">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide h-4 w-4"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div>
+                  <p class="text-white font-semibold text-sm font-geist">Kantor Pusat</p>
+                  <p class="text-white/70 text-xs font-geist">Jl. Darmawangsa No.76 RT004/RW006, Klego, Ngempon, Kec. Bergas, Kab. Semarang, Jawa Tengah 50552</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="h-9 w-9 rounded-lg bg-white/15 ring-1 ring-white/20 flex items-center justify-center text-white/90">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide h-4 w-4"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
+                </div>
+                <div>
+                  <p class="text-white font-semibold text-sm font-geist">Telepon &amp; Email</p>
+                  <p class="text-white/70 text-xs font-geist">082122221819 · javaegg@cimory.com</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Direct contact card -->
+            <div class="mt-8">
+              <div class="inline-flex items-center gap-3 rounded-2xl bg-white/95 backdrop-blur ring-1 ring-white/20 shadow-lg p-3">
+                <div class="h-12 w-12 rounded-xl bg-neutral-900 flex items-center justify-center overflow-hidden">
+                  <img src="logo-javaegg.webp" alt="Java Egg Specialities" class="h-8 w-8 object-contain">
+                </div>
+                <div class="min-w-0">
+                  <p class="text-[11px] text-neutral-500 leading-none font-geist uppercase tracking-wider">Instagram</p>
+                  <p class="text-neutral-900 font-semibold tracking-tight truncate font-geist">@mamayoindonesia · @eurogourmet.id</p>
+                </div>
+                <a href="mailto:javaegg@cimory.com" class="ml-1 inline-flex items-center gap-2 rounded-xl bg-neutral-900 text-white px-3 py-2 text-xs font-semibold hover:bg-neutral-800 transition-colors font-geist">
+                  Tanya langsung
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide h-3.5 w-3.5"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"></path></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="max-w-7xl mr-auto ml-auto pr-6 pb-12 pl-6">
+  <div class="p-12 lg:p-16 border border-white/10 rounded-3xl bg-white/[0.03] backdrop-blur-2xl">
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-12 mb-16">
+      <div class="lg:col-span-1">
+        <div class="flex items-center mb-6">
+          <span class="inline-flex h-8 w-8 items-center justify-center rounded-md bg-white/10 ring-1 ring-white/15 backdrop-blur overflow-hidden">
+            <img src="logo-javaegg.webp" alt="Java Egg Specialities" class="h-6 w-6 object-contain">
+          </span>
+          <span class="ml-2 uppercase text-lg font-semibold tracking-tighter font-bricolage text-white">Java Egg</span></div>
+        <p class="text-sm text-white/60 leading-relaxed mb-8 font-geist">
+          PT Java Egg Specialities — industri pengolahan telur cair pertama di Indonesia sejak 2007, di bawah bendera Cimory Group. Produsen Mamayo &amp; Euro Gourmet.
+        </p>
+        <div class="flex items-center gap-4">
+          <a href="https://www.instagram.com/javaegg_id" class="w-10 h-10 rounded-xl flex items-center justify-center border border-white/10 hover:border-white/20 transition-all duration-300 hover:bg-white/5 bg-white/[0.03]" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="m16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="https://x.com/javaegg_id" class="w-10 h-10 rounded-xl flex items-center justify-center border border-white/10 hover:border-white/20 transition-all duration-300 hover:bg-white/5 bg-white/[0.03]" aria-label="Twitter/X">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+              <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+            </svg>
+          </a>
+          <a href="https://m.facebook.com/profile.php?id=526557787412855" class="w-10 h-10 rounded-xl flex items-center justify-center border border-white/10 hover:border-white/20 transition-all duration-300 hover:bg-white/5 bg-white/[0.03]" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-sm font-medium text-white mb-6 uppercase tracking-wide font-geist">Menu</h4>
+        <ul class="space-y-4">
+          <li><a href="#" class="text-sm text-white/60 hover:text-white transition-colors duration-300 font-geist">Home</a></li>
+          <li><a href="#produk" class="text-sm text-white/60 hover:text-white transition-colors duration-300 font-geist">Produk</a></li>
+          <li><a href="#tentang" class="text-sm text-white/60 hover:text-white transition-colors duration-300 font-geist">Perusahaan</a></li>
+          <li><a href="#artikel" class="text-sm text-white/60 hover:text-white transition-colors duration-300 font-geist">Artikel</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-sm font-medium text-white mb-6 uppercase tracking-wide font-geist">Produk</h4>
+        <ul class="space-y-4">
+          <li><a href="#produk" class="text-sm text-white/60 hover:text-white transition-colors duration-300 font-geist">Mayonais</a></li>
+          <li><a href="#produk" class="text-sm text-white/60 hover:text-white transition-colors duration-300 font-geist">Sambal</a></li>
+          <li><a href="#produk" class="text-sm text-white/60 hover:text-white transition-colors duration-300 font-geist">Special Sauce</a></li>
+          <li><a href="#produk" class="text-sm text-white/60 hover:text-white transition-colors duration-300 font-geist">Liquid Egg</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-sm font-medium text-white mb-6 uppercase tracking-wide font-geist">Kontak</h4>
+        <ul class="space-y-4">
+          <li><a href="mailto:javaegg@cimory.com" class="text-sm text-white/60 hover:text-white transition-colors duration-300 font-geist">javaegg@cimory.com</a></li>
+          <li><a href="tel:082122221819" class="text-sm text-white/60 hover:text-white transition-colors duration-300 font-geist">082122221819</a></li>
+          <li><span class="text-sm text-white/60 font-geist">@mamayoindonesia</span></li>
+          <li><span class="text-sm text-white/60 font-geist">@eurogourmet_id</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10 pt-12 mb-12">
+      <div class="max-w-2xl mx-auto text-center">
+        <h4 class="text-lg font-medium text-white mb-4 font-geist">Jangan lewatkan info terbaru</h4>
+        <p class="text-sm text-white/60 mb-6 font-geist">Dapatkan resep, promo, dan info produk baru Mamayo &amp; Euro Gourmet langsung ke email Anda.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <input type="email" placeholder="Masukkan email Anda" class="flex-1 max-w-md px-4 py-3 rounded-xl text-sm text-white placeholder-white/40 border border-white/10 focus:border-blue-500/30 focus:outline-none transition-all duration-300 bg-white/5 font-geist">
+          <button class="px-8 py-3 rounded-xl text-sm font-medium text-white border border-blue-500/30 hover:border-blue-500/50 transition-all duration-300 bg-blue-500/15 font-geist">Berlangganan</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-6">
+    <div class="flex flex-wrap items-center gap-6 text-xs text-white/40">
+      <span class="font-geist">© 2026 PT Java Egg Specialities. All rights reserved.</span>
+      <a href="#" class="hover:text-white/60 transition-colors duration-300 font-geist">Kebijakan Privasi</a>
+      <a href="#" class="hover:text-white/60 transition-colors duration-300 font-geist">Syarat Layanan</a>
+    </div>
+    <div class="flex items-center gap-4 text-xs text-white/40">
+      <span class="flex items-center gap-2 font-geist">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white/70">
+          <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+        </svg>
+        Halal MUI Certified
+      </span>
+      <span class="flex items-center gap-2 font-geist">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-green-400">
+          <circle cx="12" cy="12" r="10"></circle>
+          <path d="m9 12 2 2 4-4"></path>
+        </svg>
+        Sejak 2007
+      </span>
+    </div>
+  </div>
+</footer>
+
+    <script>
+      // Mobile menu toggle
+      const menuBtn = document.getElementById('menuBtn');
+      const mobileNav = document.getElementById('mobileNav');
+      if (menuBtn && mobileNav) {
+        let open = false;
+        menuBtn.addEventListener('click', () => {
+          open = !open;
+          mobileNav.classList.toggle('hidden', !open);
+        });
+      }
+    </script>
+
+</body></html>
